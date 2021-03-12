@@ -43,15 +43,17 @@ Spring security
 
 # application.properties
 
-spring.security.oauth2.client.registration.google.client-id=
-spring.security.oauth2.client.registration.google.client-secret=
+- spring.security.oauth2.client.registration.google.client-id=
+- spring.security.oauth2.client.registration.google.client-secret=
 
 
 
 # Add in Security.java as below:
 
 @Configuration
-public class Security extends WebSecurityConfigurerAdapter {    @Override
+
+public class Security extends WebSecurityConfigurerAdapter { 
+@Override
     public void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .antMatcher("/**")
