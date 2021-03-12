@@ -1,4 +1,5 @@
 # GoogleOAuthDemo
+# Steps :
 Navigate to: console.developers.google.com
 Left tab: Credentials > Create credentials > OAuth Client ID
 -	Select ‘Application Type’ as ‘Web application’
@@ -7,14 +8,14 @@ Left tab: Credentials > Create credentials > OAuth Client ID
 
 
 
-https://start.spring.io/
+#https://start.spring.io/
 
 Spring web
 OAuth2 client
 Spring security
 
 
-Pom.xml
+# Pom.xml
 <dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-oauth2-client</artifactId>
@@ -40,19 +41,14 @@ Pom.xml
 </dependency>
 
 
-application.properties
+# application.properties
 
 spring.security.oauth2.client.registration.google.client-id=
 spring.security.oauth2.client.registration.google.client-secret=
 
 
 
-Add in Security.java as below:
-
-package com.example.Outh2;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+# Add in Security.java as below:
 
 @Configuration
 public class Security extends WebSecurityConfigurerAdapter {    @Override
@@ -68,4 +64,4 @@ public class Security extends WebSecurityConfigurerAdapter {    @Override
                 .oauth2Login();
     }}
 
-![image](https://user-images.githubusercontent.com/72512290/110976849-6bc97b00-832f-11eb-9c44-151c1d534059.png)
+
