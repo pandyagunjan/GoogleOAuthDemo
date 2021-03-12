@@ -8,8 +8,7 @@ Left tab: Credentials > Create credentials > OAuth Client ID
 
 
 
-#https://start.spring.io/
-Add following dependency :
+# Log into https://start.spring.io/ and add following dependency :
 - Spring web
 - OAuth2 client
 - Spring security
