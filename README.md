@@ -9,13 +9,13 @@ Left tab: Credentials > Create credentials > OAuth Client ID
 
 
 #https://start.spring.io/
+Add following dependency :
+- Spring web
+- OAuth2 client
+- Spring security
 
-Spring web
-OAuth2 client
-Spring security
 
-
-# Pom.xml
+# OR add below in pom.xml
 <dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-oauth2-client</artifactId>
@@ -43,8 +43,9 @@ Spring security
 
 # application.properties
 
-- spring.security.oauth2.client.registration.google.client-id=
-- spring.security.oauth2.client.registration.google.client-secret=
+- spring.security.oauth2.client.registration.google.client-id=${Client_ID}
+- spring.security.oauth2.client.registration.google.client-secret=${Client_Secret}
+- -   (Note aded as environment variable)
 
 
 
