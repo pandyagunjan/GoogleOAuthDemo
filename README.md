@@ -6,7 +6,7 @@ Left tab: Credentials > Create credentials > OAuth Client ID
 -	In ‘Authorised redirect URIs , add the URI http://localhost:8080/login/oauth2/code/google // redirects user to login page
 -	Copy the client ID and Client secret key to enter in the application.properties
 
-
+#https://yatheesanc9.medium.com/spring-boot-with-google-sign-in-8e304dbe936e
 
 # Log into https://start.spring.io/ and add following dependency :
 - Spring web
