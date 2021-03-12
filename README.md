@@ -54,6 +54,7 @@ Spring security
 
 public class Security extends WebSecurityConfigurerAdapter
 { 
+
 @Override
 
     public void configure(HttpSecurity httpSecurity) throws Exception {
