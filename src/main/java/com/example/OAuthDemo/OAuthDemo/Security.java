@@ -1,8 +1,9 @@
 package com.example.OAuthDemo.OAuthDemo;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-
+@Configuration
 public class Security extends WebSecurityConfigurerAdapter {
 
     @Override
