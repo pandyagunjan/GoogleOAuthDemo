@@ -53,17 +53,31 @@ Spring security
 @Configuration
 
 public class Security extends WebSecurityConfigurerAdapter { 
+
 @Override
+
     public void configure(HttpSecurity httpSecurity) throws Exception {
+    
         httpSecurity
+        
                 .antMatcher("/**")
+                
                 .authorizeRequests()
+                
                 .antMatchers("/")
+                
                 .permitAll()
+                
                 .anyRequest()
+                
                 .authenticated()
+                
                 .and()
+                
                 .oauth2Login();
-    }}
+                
+    }
+    
+    }
 
 
